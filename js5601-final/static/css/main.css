@@ -7,3 +7,15 @@
     padding: 10px;
     width: 100px;
 }
+
+#basketball {
+    display: none;
+}
+
+#soccer {
+    display: none;
+}
+
+#tennis {
+    display: none;
+}

@@ -21,6 +21,10 @@ def home1006():
 def classes():
     return render_template("classes.html")
 
+@app.route("/sports")
+def sports():
+    return render_template("sports.html")
+
 
 # start the server
 if __name__ == "__main__":

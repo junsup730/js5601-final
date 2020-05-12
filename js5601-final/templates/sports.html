@@ -2,35 +2,46 @@
 <html>
     <head>
         <link rel="stylesheet" href="/static/css/main.css">
+
         <!-- Include bootstrap CSS and JS, minified -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
+
         <!--specifies title of the page !-->
-        <title>Classes</title>
+        <title>Sports</title>
     <head>
     <body>
     <div id="top-content" class="jumbotron">
-        <h1 align="center">Classes</h1><br>
-    </div>
-    <div id="fav-class">
-        <h3 align="center">My favorite class taken so far: </h3><br>
-        <p align="center">
-            My favorite class taken so far is probability class. The professor gave us real world examples and experiments to teach probability. Even though, the math part was boring, there were some interesting formulas that are used in today’s world.
-        </p><br><br>
+        <h1 align="center">Sports</h1><br>
     </div>
     <div id="classes-list">
-        <h3>The classes I'm currently taking are:</h3>
+        <h3>The sports I'm interested in :</h3>
         <ul>
-            <li>Partial Differential Equations</li>
-            <li>Analysis and Optimization</li>
-            <li>R coding</li>
-            <li>Python coding</li>
-            <li>Corporate Finance</li>
+            <li><a onclick="javascript:toggleDisplay('soccer')" href="#">Soccer</a></li>
+            <li><a onclick="toggleDisplay('basketball')" href="#">Basketball</a></li>
+            <li><a onclick="toggleDisplay('tennis')" href="#">Tennis</a></li>
         </ul>
     </div>
+    <br><br>
+    <div id="soccer" style="display: none;">
+       <h4>Soccer</h4>
+        <p>Liverpool FC is my favorite soccer team, and they are currently in a first position in EPL.</p>
+    </div>
+    <div id="basketball" style="display: none;">
+        <h4>Basketball</h4>
+        <p>My favorite basketball team is Gold states warriors, but without Curry and Durant, they are really bad. They are in a last place in NBA right now.</p>
+    </div>
+    <div id="tennis" style="display: none;">
+        <h4>Tennis</h4>
+        <p>My favorite Tennis player is Roger Federer. Even though he is almost 40 years old, he won the Wimbledon last year.</p>
+    </div>
+
+    <script src="/static/js/main.js"></script>
     </body>
+
+
 </html>
 
